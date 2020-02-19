@@ -1,6 +1,6 @@
 $primaryColor: #8CBFFF;
-$backgroundColor: black;
-$fontColor:white;
+$backgroundColor: white;
+$fontColor:black;
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -12,7 +12,10 @@ body{
 nav {
     background-color:$primaryColor;
     overflow: hidden;
-    padding: 0 30%
+    padding: 0 30%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
 
   #logo {
@@ -54,3 +57,64 @@ nav {
   #title{
       font-size: 2.5em;
   }
+
+  .icon{
+      font-size:600%;
+      color: $primaryColor;
+  }
+
+  .homepage{
+      margin: 0 20% 50px;
+  }
+
+
+  /* Create three equal columns that floats next to each other */
+.column-3 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .column-2 {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    clear: both;
+  }
+
+  #cv-img{
+      width:100%;
+  }
+
+  .cv-list, .cv-name{
+      text-align: right;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .cv h2{
+      font-size: 2em;
+  }
+
+  .cv h3{
+    font-size: 1.5em;
+}
+
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column-3, .column-2 {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .nav-link .logo {
+      float: none;
+      width: 100%;
+    }
+  }
+

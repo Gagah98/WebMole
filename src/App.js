@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import Nav from './Nav'
 import Home from './Home'
+import CV from './cv'
 
-class Portfolio extends Component {
+class App extends Component {
     render() {
         return (
-            <body>
+            <div>
             <Nav />
             <Home />
-            </body>
+            <CV />
+            </div>
         )
     }
 
 }
 
-export default Portfolio
+export default App
