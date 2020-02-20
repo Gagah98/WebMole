@@ -17,7 +17,7 @@ const Footer = () => {
                     <p>info@webmole.ch</p>
                 </div>
                 <div className="column-3">
-                <h2>Suivez-moi</h2>
+                <h2>Réseaux sociaux</h2>
                 <a href="/"><FontAwesomeIcon icon={faInstagram} className="footer-icon"/></a>
                 <a href="/"><FontAwesomeIcon icon={faFacebook} className="footer-icon"/></a>                
                 </div>
