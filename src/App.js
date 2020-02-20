@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Nav from './Nav'
 import Home from './Home'
-import CV from './CV'
+import CV from './cv'
 import Footer from './Footer'
 
 
