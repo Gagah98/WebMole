@@ -12,7 +12,7 @@ const SellingPattern = () => {
             </div>
             <div className="column-3">
                 <FontAwesomeIcon icon={faChartBar} className="icon"/>
-                <h2>Analyse des besoins</h2>
+                <h2>Analyse de la situation actuelle <br></br> et des besoins</h2>
             </div>
             <div className="column-3">
                 <FontAwesomeIcon icon={faTools} className="icon" />

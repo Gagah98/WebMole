@@ -12,10 +12,7 @@ body{
 nav {
     background-color:$primaryColor;
     overflow: hidden;
-    padding: 0 30%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+    padding: 0 25%;
   }
 
   #logo {
@@ -50,7 +47,7 @@ nav {
   }
 
   #logo-homepage{
-      width:20%;
+      width:200px;
       margin: 30px;
   }
 
@@ -75,7 +72,7 @@ nav {
   }
 
   .column-2 {
-    float: left;
+    float: right;
     width: 50%;
   }
   
@@ -85,10 +82,15 @@ nav {
     clear: both;
   }
 
+  .cv{
+    float:left;
+  }
+
   #cv-img{
       width:100%;
   }
 
+  
   .cv-list, .cv-name{
       text-align: right;
       padding: 20px;
@@ -103,6 +105,25 @@ nav {
     font-size: 1.5em;
 }
 
+footer{
+  background-color: $primaryColor;
+  float:left;
+  width: 100%;
+}
+
+footer .column-3{
+  box-sizing: border-box;
+  margin:auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer-icon{
+  font-size:200%;
+  padding-left:10px;
+  color:black;
+}
+
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width:600px) {
@@ -111,10 +132,21 @@ nav {
     }
   }
 
-  @media screen and (max-width: 400px) {
-    .nav-link .logo {
+  @media screen and (min-width:600px) {
+  .cv-list{
+    padding-top: 60px;
+  }
+}
+
+
+  @media screen and (max-width: 1200px) {
+    .nav-link, #logo {
       float: none;
       width: 100%;
+    }
+
+    #logo{
+      width:80px;
     }
   }
 
