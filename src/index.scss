@@ -8,6 +8,13 @@ body{
     color:$fontColor;
 }
 
+.menu-header{
+  background-color: $primaryColor;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
 
 nav {
     background-color:$primaryColor;
@@ -38,6 +45,7 @@ nav {
     background-color: #ddd;
     color: black;
   }
+
 
   main{
       float:left;

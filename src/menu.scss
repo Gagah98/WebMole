@@ -4,7 +4,7 @@
   cursor: pointer;
   position: fixed;
   right: 20px;
-  bottom: 40px;
+  top: 25px;
   z-index: 9999;
   background: #fff;
   padding: 10px;
@@ -59,4 +59,18 @@
 }
 .menu li:hover {
   color: #ff0000;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .menu, .burger-menu, .menu-header {
+      display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    nav {
+      display: none;
+    }
 }
