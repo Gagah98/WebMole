@@ -3,7 +3,7 @@ import logo from './img/webmole_icon.png'
 
 const Nav = () => {
     return (
-        <div>
+        <div className="top-header">
         <nav>
  <a href="/"> <img id="logo" src={logo} alt="webmole logo"></img> </a>
   <a href="/portfolio" className="nav-link">portfolio</a>

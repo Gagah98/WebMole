@@ -8,6 +8,10 @@ body{
     color:$fontColor;
 }
 
+.top-header{
+  padding-bottom: 100px;
+}
+
 .menu-header{
   background-color: $primaryColor;
   display: block;
@@ -21,6 +25,8 @@ nav {
     background-color:$primaryColor;
     overflow: hidden;
     padding: 0 25%;
+    position: fixed;
+    width:100%
   }
 
   #logo {
