@@ -4,9 +4,16 @@ import Nav from './Nav'
 import Home from './Home'
 import CV from './cv'
 import Footer from './Footer'
+import PortfolioList from './PortfolioList'
 
 import BurgerIcon from "./BurgerIcon";
 import Menu from "./Menu";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 
   const contentStyle = {
@@ -19,7 +26,9 @@ import Menu from "./Menu";
 class App extends Component {
     render() {
         return (
+          
             <div>
+              <Router>
                 <Nav />
               <Popup
       modal
@@ -30,9 +39,21 @@ class App extends Component {
     >
       {close => <Menu close={close} />}
     </Popup>
-            <Home />
+
+    <Switch>
+          <Route exact path="/">
+          <Home />
             <CV />
+          </Route>
+          <Route path="/portfolio">
+            <PortfolioList />
+          </Route>
+          <Route path="/blog">
+          </Route>
+        </Switch>
+
             <Footer />
+            </Router>
             </div>
         )
     }

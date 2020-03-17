@@ -61,6 +61,10 @@
   color: #ff0000;
 }
 
+.menu a {
+  text-decoration: none;
+}
+
 
 @media screen and (min-width: 1200px) {
     .menu, .burger-menu, .menu-header {
