@@ -6,6 +6,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: $backgroundColor;
     color:$fontColor;
+    line-height: 1.75;
 }
 
 .top-header{
@@ -84,6 +85,7 @@ nav {
 .column-3 {
     float: left;
     width: 33.33%;
+    padding-bottom: 50px;
   }
 
   .column-2 {

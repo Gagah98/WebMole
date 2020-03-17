@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
                 <div className="column-3">
                 <h2>Contact</h2>
-                    <p>+41 78 724 46 17</p>
+                    <p>+41 78 714 46 17</p>
                     <p>info@webmole.ch</p>
                 </div>
                 <div className="column-3">

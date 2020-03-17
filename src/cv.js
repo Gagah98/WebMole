@@ -1,5 +1,4 @@
 import React from 'react'
-import photo_cv from './img/photo_cv-min.jpg'
 
 const CV = () => {
     return (
@@ -7,7 +6,7 @@ const CV = () => {
             <div className="row">
             <div className="column-2 cv-name">
                 <h2>Gaëtan Haefeli</h2>
-            <img id="cv-img" src={photo_cv} alt="gaetan haefeli cv"></img>
+            <img id="cv-img" src="images/photo_cv-min.jpg" alt="gaetan haefeli cv"></img>
             </div>
             <div className="column-2 cv-list">
             <h2>Ingénieur en médias</h2>
