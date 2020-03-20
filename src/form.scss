@@ -1,0 +1,34 @@
+$primaryColor: #8CBFFF;
+$formColor:black;
+
+.contact-form{
+    background-color: $primaryColor;
+    margin-top:50px;
+    padding:50px;
+    border-radius: 25px;
+    width:80%;
+    display:inline-block;
+    text-align:center;
+}
+
+
+#outlined-required{
+    color:$formColor;
+}
+
+.contact-form fieldset{
+    border-color:$formColor;
+}
+
+.contact-form span {
+    color:$formColor;
+}
+
+.contact-form label {
+    color:$formColor;
+}
+
+.contact-form button {
+    color:$formColor;
+    border-color: $formColor;
+}
