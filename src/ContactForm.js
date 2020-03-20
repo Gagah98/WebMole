@@ -13,7 +13,9 @@ class ContactForm extends Component {
       this.state = {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        telephone:'',
+        societe: '',
       }
     }
 
@@ -42,7 +44,7 @@ class ContactForm extends Component {
 
     resetForm(){
     
-      this.setState({name: '', email: '', message: ''})
+      this.setState({name: '', email: '', message: '', telephone:'', societe: ''})
    }
   
   render() {
@@ -73,6 +75,28 @@ class ContactForm extends Component {
           fullWidth
           value={this.state.email} 
           onChange={this.onEmailChange.bind(this)}
+        />
+        </Grid>
+        <Grid item xs={6}>
+        <TextField
+          id="outlined"
+          label="Telephone"
+          variant="outlined"
+          margin="dense"
+          fullWidth
+          value={this.state.telephone} 
+          onChange={this.onTelChange.bind(this)}
+        />
+        </Grid>
+        <Grid item xs={6}>
+        <TextField
+          id="outlined"
+          label="Société"
+          variant="outlined"
+          margin="dense"
+          fullWidth
+          value={this.state.societe} 
+          onChange={this.onSocieteChange.bind(this)}
         />
         </Grid>
         <Grid item xs={12}>
@@ -108,6 +132,12 @@ class ContactForm extends Component {
   
     onMessageChange(event) {
       this.setState({message: event.target.value})
+    }
+    onTelChange(event) {
+      this.setState({telephone: event.target.value})
+    }
+    onSocieteChange(event) {
+      this.setState({societe: event.target.value})
     }
   
    
