@@ -5,6 +5,7 @@ import Home from './Home'
 import CV from './cv'
 import Footer from './Footer'
 import PortfolioList from './PortfolioList'
+import ContactForm from './ContactForm'
 
 import BurgerIcon from "./BurgerIcon";
 import Menu from "./Menu";
@@ -49,6 +50,9 @@ class App extends Component {
             <PortfolioList />
           </Route>
           <Route path="/blog">
+          </Route>
+          <Route path="/contact">
+            <ContactForm />
           </Route>
         </Switch>
 
